@@ -5,7 +5,7 @@ for i in range(0,5):
     tmp=int(input(" "))
     sum=sum+tmp
     arr[i]=tmp
-avr=sum/5
+avr=int(sum/5)
 
 for i in range(4,0,-1):
     for j in range(0,i):
@@ -16,7 +16,8 @@ for i in range(4,0,-1):
 
 center=arr[2]
 
-print(avr,"\n",center)
+print(avr)
+print(center)
 
 
 
