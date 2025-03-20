@@ -1,7 +1,7 @@
 import sys
 
 def search(arr,start,end,C):
-    result=0
+    result=1
     while start<=end:
          current=arr[0]
          count=1
