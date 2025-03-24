@@ -1,5 +1,6 @@
 import sys
 
+
 n = int(sys.stdin.readline())
 array =[]
 for i in range(0,n,1):
