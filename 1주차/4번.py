@@ -1,13 +1,12 @@
 import sys
 
-
 n = int(sys.stdin.readline())
-array =[]
-for i in range(0,n,1):
-    a=int(sys.stdin.readline())
-    array.append(a)
+num_list = [0] * 10001
 
-array.sort()
+for _ in range(n):
+    num_list[int(sys.stdin.readline())] += 1
 
-for i in range(0,n,1):
-    print(array[i])
+for i in range(10001):
+    if num_list[i] != 0:
+        for j in range(num_list[i]):
+            print(i)
