@@ -7,15 +7,20 @@ atomic_list=list(map(int,sys.stdin.readline().split()))
 M=int(sys.stdin.readline())
 arr=list(map(int,sys.stdin.readline().split()))
 
-queue=deque()
+
+queuestack=deque()
 for i in range(N):
     if structure_list[i]==0:
-        queue.append(atomic_list[i])
+        queuestack.append(atomic_list[i])
+
+queuestack.reverse()   
 
 for i in range(M):
     item=arr[i]
-    queue.appendleft(item)
-    print(queue.pop(),end=' ')
+    queuestack.append(item)
+    
+    print(queuestack.popleft(),end=' ')
+
     
 
 #시간초과
